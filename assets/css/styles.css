@@ -240,24 +240,51 @@ html {
 /* Places */
 .places-list {
   margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px; /*Ghi vao trong word 2 cai nay */
+  padding-bottom: 48px;
 }
 .place-item {
   float: left;
   width: 33.33333%;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 .place-img {
   width: 100%;
+  display: block;
 }
+.place-img:hover {
+  opacity: 0.6;
+}
+
 .place-body {
+  font-size: 15px;
+  background-color: #fff;
+  padding: 16px;
 }
 .place-heading {
+  font-size: 15px;
 }
 .place-time {
+  margin-top: 15px;
+  color: #757575;
 }
 .place-desc {
+  margin-top: 15px;
+  line-height: 1.4;
 }
 .place-buy-btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 11px 14px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+  color: #000;
+  background-color: #ccc;
 }
 
 /* Footer section */
