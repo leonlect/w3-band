@@ -23,6 +23,7 @@ html {
   4. Kiểu dáng (kiểu chữ, tròn, vuông....).
   */
 
+/* Common class - Những class dùng chung thiết kế riêng 1 chỗ */
 .clear {
   clear: both;
 }
@@ -31,6 +32,33 @@ html {
   color: #fff !important;
 }
 
+/* 2 Class này: row dùng để căn giữa 2 bên cho ngay viền
+column dùng để định dạng cột. Thiết kế kiểu vầy để có thể tái sử dụng
+nhiều lần. Mà ko cần mỗi khi gặp dạng như cột-dòng thì ko cần viết đi viết lại như place list và list member. */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-third {
+  width: 33.33333%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* Class cho các nội dung nằm trong main */
 #main {
 }
 #header {
@@ -184,12 +212,6 @@ html {
   margin-top: 48px;
 }
 
-#content .member-item {
-  float: left;
-  width: 33.33333%;
-  text-align: center;
-}
-
 #content .member-name {
   font-size: 15px;
 }
@@ -240,14 +262,7 @@ html {
 /* Places */
 .places-list {
   margin-top: 32px;
-  margin-left: -8px;
-  margin-right: -8px; /*Ghi vao trong word 2 cai nay */
   padding-bottom: 48px;
-}
-.place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0 8px;
 }
 .place-img {
   width: 100%;
